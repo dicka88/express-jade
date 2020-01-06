@@ -8,9 +8,4 @@ const connSQL = mysql.createConnection({
     database: 'node'
 })
 
-connSQL.connect(err => {
-    if (err) throw err
-    console.log("MySQL connected to db Node");
-})
-
 module.exports = connSQL
