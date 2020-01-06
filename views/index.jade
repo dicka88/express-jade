@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .row
+    .col-lg-4
+    .col-lg-4
+      .card
+        .card-body
+          fieldset
+            legend
+              img(src="/images/account.png", style="width: 50px;").rounded.mx-auto.d-block.img-fluid
+          .input-group.mb-3
+            .input-group-prepend
+              span.input-group-text#basic-addon1 @
+            input(type="text", placeholder="Username", aria-label="Username", aria-describedby="basic-addon1").form-control
+          .input-group.mb-3
+            .input-group-prepend
+              span.input-group-text#basic-addon1
+                i.fas.fa-lock
+            input(type="password", placeholder="Password", aria-label="Username", aria-describedby="basic-addon1").form-control
+          .input-group-mb-3.form-check
+            input(type="checkbox").form-check-input
+            label.form-check-label remember me
+          .input-group.mt-3.mb-3.center
+            button(type="submit").btn.btn-primary login
+          .input-group.mt-3.mb-3.center          
+            a(href="/register") register
+    .col-lg-4
