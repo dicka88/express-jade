@@ -5,11 +5,11 @@ const md5 = require('md5')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Home' });
+    res.render('index', { title: 'Home | JadeX' });
 });
 
 router.get('/login', function(req, res, next) {
-    res.render('index', { title: 'Login' });
+    res.render('index', { title: 'Login | JadeX' });
 });
 
 router.post('/login', function(req, res, next) {
@@ -42,7 +42,7 @@ router.post('/login', function(req, res, next) {
 });
 
 router.get('/register', function(req, res) {
-    res.render('register', { title: 'Register Account' })
+    res.render('register', { title: 'Register Account | JadeX' })
 })
 
 router.post('/register', (req, res) => {
